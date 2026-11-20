@@ -580,10 +580,12 @@ fig_distribution.update_layout(
     )
 )
 
-st.plotly_chart(
-    fig_distribution,
-    use_container_width=True
-)
+with st.container(border=True):
+    st.plotly_chart(
+        fig_distribution,
+        use_container_width=True,
+        config={'displayModeBar': False}
+    )
 
 # --------------------------------------------------
 # PARETO ANALYSIS
@@ -643,8 +645,8 @@ else:
             x=case_counts["Case"].astype(str),
             y=case_counts["Exceedances"],
             name="Threshold Exceedances",
-            marker_color="#2563EB",
-            marker_line_color="#1D4ED8",
+            marker_color="#0F766E",
+            marker_line_color="#115E59",
             marker_line_width=0.5,
             width=0.58,
             text=case_counts["Exceedances"],
@@ -753,8 +755,10 @@ else:
     )
 
     st.plotly_chart(
-        fig_pareto,
-        use_container_width=True
+    fig_pareto,
+    use_container_width=True,
+    config={'displayModeBar': False}
+
     )
 
     st.caption(
@@ -885,8 +889,10 @@ else:
     )
 
     st.plotly_chart(
-        fig_case,
-        use_container_width=True
+    fig_case,
+    use_container_width=True,
+    config={'displayModeBar': False}
+
     )
 
 # --------------------------------------------------
@@ -991,8 +997,10 @@ if alerts:
             )
 
             st.plotly_chart(
-                fig_severity,
-                use_container_width=True
+    fig_severity,
+    use_container_width=True,
+    config={'displayModeBar': False}
+
             )
 
         with status_col:
@@ -1056,8 +1064,10 @@ if alerts:
             )
 
             st.plotly_chart(
-                fig_status,
-                use_container_width=True
+    fig_status,
+    use_container_width=True,
+    config={'displayModeBar': False}
+
             )
 
     else:
@@ -1168,8 +1178,10 @@ if work_orders:
             )
 
             st.plotly_chart(
-                fig_work_status,
-                use_container_width=True
+    fig_work_status,
+    use_container_width=True,
+    config={'displayModeBar': False}
+
             )
 
         with completion_col:
