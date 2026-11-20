@@ -558,7 +558,7 @@ with generate_col:
             import numpy as np
 
             data_path = (
-                BASE_DIR.parent
+                BASE_DIR
                 / "Data_Milling_Machine"
                 / "mill.mat"
             )

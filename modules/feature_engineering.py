@@ -8,7 +8,7 @@ from scipy.stats import kurtosis, skew
 
 
 DATA_PATH = (
-    Path(__file__).resolve().parents[2]
+    Path(__file__).resolve().parents[1]
     / "Data_Milling_Machine"
     / "mill.mat"
 )

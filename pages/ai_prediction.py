@@ -17,7 +17,7 @@ from scipy.io import loadmat
 BASE_DIR = Path(__file__).resolve().parent.parent
 
 DATA_PATH = (
-    BASE_DIR.parent
+    BASE_DIR
     / "Data_Milling_Machine"
     / "mill.mat"
 )
