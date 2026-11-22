@@ -1,5 +1,6 @@
 \# AI-Based Predictive Maintenance Dashboard for Milling Machines
 
+🔗 Open Live Streamlit Dashboard
 
 
 An experimental predictive maintenance system that uses milling machine sensor data, statistical signal processing, and machine learning to estimate cutting tool flank wear and support maintenance decision-making.
